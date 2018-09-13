@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         @SuppressLint("StringFormatInvalid")
         public void showMessage(View view) {
-            myName.setText(getString(R.string.hello) + ' ' + inputName.getText());
+            myName.setText(String.format("%s %s", getString(R.string.hello), inputName.getText()));
             inputName.getText().clear();
         }
 }
