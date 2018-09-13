@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-        private Button buttonHi, buttonClear;
+        Button buttonHi, buttonClear;
         private EditText inputName;
         private TextView myName;
 
