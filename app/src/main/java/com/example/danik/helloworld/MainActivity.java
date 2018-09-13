@@ -9,9 +9,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-        Button buttonHi, buttonClear;
-        EditText inputName;
-        TextView myName;
+        private Button buttonHi, buttonClear;
+        private EditText inputName;
+        private TextView myName;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
