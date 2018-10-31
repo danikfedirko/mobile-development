@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">Magnific</string>
     <string name="action_settings">Settings</string>
-    <string name="inputFirstName">Enter your First Name</string>
-    <string name="inputLastName">Enter your Last Name</string>
-    <string name="inputEmail">Enter correct email</string>
-    <string name="inputPhone">Enter correct number</string>
-    <string name="inputPassword">Enter Password</string>
+    <string name="FirstName">Input your first name</string>
+    <string name="LastName">Input your last name</string>
+    <string name="PhoneNumber">Input your phone number</string>
+    <string name="Email">Input your email</string>
+    <string name="Password">Enter Password</string>
     <string name="inputConfirmation">Password do not match</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="buttonShowList">Show list</string>
 </resources>
