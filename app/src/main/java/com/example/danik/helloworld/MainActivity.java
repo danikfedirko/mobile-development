@@ -1,5 +1,6 @@
 package com.example.danik.helloworld;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,15 +9,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-        Button buttonHi, buttonClear;
-        EditText inputName;
-        TextView myName;
+        private Button buttonHi, buttonClear;
+        private EditText inputName;
+        private TextView myName;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            System.out.println("Hello World");
             inputName = findViewById(R.id.inputName);
             buttonClear = findViewById(R.id.buttonClear);
             buttonHi = findViewById(R.id.buttonHi);
@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
             inputName.getText().clear();
         }
 
+        @SuppressLint("StringFormatInvalid")
         public void showMessage(View view) {
-            myName.setText("Hello" + " " + inputName.getText().toString());
+            myName.setText(String.format("%s %s", getString(R.string.hello), inputName.getText()));
             inputName.getText().clear();
         }
 }
